@@ -13,7 +13,7 @@ class Program
             if (!entered)                                                //інакше блок Finally викличе Release на
             {                                                            //не існуючий потік і вилізе Exception
                 return;                                                  //Сам WaitOne указує на те чи зайнятий ресурс
-            }                                                            //на даний ресурс і блокує його на час очікування
+            }                                                            //на даний момент і блокує його на час очікування
             Console.WriteLine($"Thread {id} зайшов");                    //https://learn.microsoft.com/ru-ru/dotnet/api/system.threading.waithandle?view=net-8.0
             Thread.Sleep(2000);                          //Коментарі другий абзац
         }
